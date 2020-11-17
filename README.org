@@ -1,0 +1,13 @@
+#+title: Tang
+
+Tang is a model for representing rich text data in a generalized way. Tang is primarily intended as an in-memory representation. Some content will be read from a file in one markup language (e.g. org or markdown), transformed to Tang, operated on by a series of operators, and then written back out to another output format (e.g. HTML). Tang also does not specify a single serialized representation of the Tang structure. Instead, "Tang Transfer Formats" are standardized separately.
+
+* Goals
+ - *Universal:* Not be tied to a specific format. 
+ - *Extensible:* Non-standardized information can still be preserved in transformations.
+ - *Content-Based:* Tang is for rich text, not structured data.
+ - *Graceful Failures:* If something does not understand part of the information, then it should fail gracefully.
+
+* Status
+
+  Tang is currently a draft. This means that while it may be written like a standard, it has no stability guarantees and no versioning.
